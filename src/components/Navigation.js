@@ -12,10 +12,10 @@ const Navigation = (props) => {
         </Link>
       )}
       <Link className="hover-effect" to="/">
-        <h1>Home</h1>
+        <h1>HOME</h1>
       </Link>
       <Link className="hover-effect" to="/about">
-        <h1>About</h1>
+        <h1>ABOUT</h1>
       </Link>
       <a
         className="hover-effect"
@@ -23,16 +23,16 @@ const Navigation = (props) => {
         target="_blank"
         rel="noreferrer"
       >
-        <h1>Menu</h1>
+        <h1>MENU</h1>
       </a>
       <Link className="hover-effect" to="/reservations">
-        <h1>Reservations</h1>
+        <h1>RESERVATIONS</h1>
       </Link>
       <Link className="hover-effect" to="/order">
-        <h1>Order</h1>
+        <h1>ORDER</h1>
       </Link>
       <Link className="hover-effect" to="/login">
-        <h1>Login</h1>
+        <h1>LOGIN</h1>
       </Link>
     </menu>
   );
