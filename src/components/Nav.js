@@ -1,28 +1,25 @@
 import logo from "../assets/nav-logo.svg";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
     <nav>
-      <img src={logo} alt="Nav Logo" />
-      <ul>
-        <li>
-          <a href="/">HOME</a>
-        </li>
-        <li>
-          <a href="/about">ABOUT</a>
-        </li>
-        <li>
-          <a href="/menu">MENU</a>
-        </li>
-        <li>
-          <a href="/reservations">RESERVATIONS</a>
-        </li>
-        <li>
-          <a href="/order">ORDER ONLINE</a>
-        </li>
-        <li>
-          <a href="/login">LOGIN</a>
-        </li>
+      <Link to="/">
+        <img src={logo} alt="Nav Logo" />
+      </Link>
+      <ul className="nav-bar">
+        <Link to="/">HOME</Link>
+        <Link to="/about">ABOUT</Link>
+        <a
+          href={require("../assets/menu.webp")}
+          target="_blank"
+          rel="noreferrer"
+        >
+          MENU
+        </a>
+        <Link to="/reservations">RESERVATIONS</Link>
+        <Link to="/orders">ORDER ONLINE</Link>
+        <Link to="/login">LOGIN</Link>
       </ul>
     </nav>
   );

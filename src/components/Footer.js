@@ -13,7 +13,13 @@ const Footer = () => {
           <ul className="footer-links">
             <Link to="/">Home</Link>
             <Link to="/about">About</Link>
-            <Link to="/menu">Menu</Link>
+            <a
+              href={require("../assets/menu.webp")}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Menu
+            </a>
             <Link to="/reservations">Reservation</Link>
             <Link to="/orders">Order Online</Link>
             <Link to="/login">Login</Link>
