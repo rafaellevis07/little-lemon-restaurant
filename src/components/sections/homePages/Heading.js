@@ -21,7 +21,7 @@ const Heading = () => {
         <section className="hero-image">
           <img
             src={require("../../../assets/food/food1.png")}
-            alt="Little Lemon restaurant cuisine"
+            alt="Cuisine"
           ></img>
         </section>
       </article>
