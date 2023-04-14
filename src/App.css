@@ -182,7 +182,25 @@ Link:link {
 }
 
 .menu-card-content > h1 {
+  position: relative;
+  margin: 0.5rem 2rem 1rem 2rem;
+}
+
+.name-price-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.name-price-container > h1 {
   font-size: 2.2rem;
+  margin: 0;
+}
+
+.name-price-container > .price {
+  color: #ee9972;
+  font-size: 1.6rem;
   margin: 0;
 }
 
@@ -194,8 +212,9 @@ Link:link {
 .special-button {
   background-color: #f4ce14;
   border-radius: 0.2rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   padding: 0.5rem;
+  font-weight: bold;
 }
 
 .special-button:hover {
