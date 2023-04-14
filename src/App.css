@@ -60,6 +60,7 @@ Link:link {
   border-radius: 0.2rem;
   font-family: "Karla";
   font-size: 2rem;
+  font-weight: bold;
 }
 
 .action-button:hover {
