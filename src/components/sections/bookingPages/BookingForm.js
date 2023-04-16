@@ -12,7 +12,9 @@ const BookingForm = (props) => {
   const [comments, setComments] = useState("");
 
   const [finalTime, setFinalTime] = useState(
-    props.availableTimes.map((times) => <option>{times}</option>)
+    props.availableTimes
+      ? props.availableTimes.map((times) => <option>{times}</option>)
+      : []
   );
 
   const handleDateChange = (e) => {
