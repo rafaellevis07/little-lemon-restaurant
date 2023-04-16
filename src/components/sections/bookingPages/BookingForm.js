@@ -1,16 +1,30 @@
 import { useState } from "react";
 
-const BookingForm = () => {
+const BookingForm = (props) => {
   const [fName, setFName] = useState("");
   const [lName, setLName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [guest, setGuest] = useState(1);
   const [date, setDate] = useState("");
-  const [availableTimes, setAvailableTimes] = useState("");
   const [occasion, setOccasion] = useState("");
   const [preference, setPreference] = useState("");
   const [comments, setComments] = useState("");
+
+  const [finalTime, setFinalTime] = useState(
+    props.availableTimes.map((times) => <option>{times}</option>)
+  );
+
+  const handleDateChange = (e) => {
+    setDate(e.target.value);
+
+    var stringify = e.target.value;
+    const date = new Date(stringify);
+
+    props.updateTimes(date);
+
+    setFinalTime(props.availableTimes.map((times) => <option>{times}</option>));
+  };
 
   return (
     <form className="reservation-form">
@@ -100,25 +114,15 @@ const BookingForm = () => {
           minLength={2}
           maxLength={100}
           value={date}
-          onChange={(e) => setDate(e.target.value)}
+          onChange={handleDateChange}
         />
       </div>
 
       <div>
         <label htmlFor="res-time">Time </label>
         <br />
-        <select
-          id="res-time"
-          required
-          value={availableTimes}
-          onChange={(e) => setAvailableTimes(e.target.value)}
-        >
-          <option>17:00</option>
-          <option>18:00</option>
-          <option>19:00</option>
-          <option>20:00</option>
-          <option>21:00</option>
-          <option>22:00</option>
+        <select id="res-time" required>
+          {finalTime}
         </select>
       </div>
 
