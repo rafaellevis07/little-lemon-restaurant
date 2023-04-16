@@ -1,7 +1,13 @@
-import React from "react";
+import Heading from "../sections/bookingPages/Heading";
+import BookingForm from "../sections/bookingPages/BookingForm";
 
 const BookingPage = () => {
-  return <div>BookingPage</div>;
+  return (
+    <>
+      <Heading />
+      <BookingForm />
+    </>
+  );
 };
 
 export default BookingPage;
