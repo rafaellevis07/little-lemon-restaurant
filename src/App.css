@@ -396,10 +396,19 @@ footer > menu {
 .reservation-form {
   padding: 2rem 0 0.5rem 0;
   text-align: center;
+  font-weight: bold;
 }
 
 .reservation-form > div {
   margin-bottom: 1.5rem;
+}
+
+.reservation-form label {
+  display: block;
+}
+
+.reservation-form textarea {
+  width: 35%;
 }
 
 .confirmation-header {
