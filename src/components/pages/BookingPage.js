@@ -1,15 +1,16 @@
 import { useReducer } from "react";
 import Heading from "../sections/bookingPages/Heading";
 import BookingForm from "../sections/bookingPages/BookingForm";
+import { fetchAPI } from "../../reservationAPI";
 
 const BookingPage = () => {
   const updateTimes = (date) => {
-    return date;
+    return fetchAPI(date);
   };
 
-  const initialize = [];
+  const output = fetchAPI(new Date());
 
-  const [availableTimes, dispatch] = useReducer(updateTimes, initialize);
+  const [availableTimes, dispatch] = useReducer(updateTimes, output);
 
   return (
     <>

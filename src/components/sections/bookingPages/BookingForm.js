@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const BookingForm = (props) => {
   const [fName, setFName] = useState("");
@@ -109,7 +110,7 @@ const BookingForm = (props) => {
         <label htmlFor="date">Date </label>
         <br />
         <input
-          type="text"
+          type="date"
           id="date"
           placeholder="Date"
           required
@@ -168,6 +169,20 @@ const BookingForm = (props) => {
           value={comments}
           onChange={(e) => setComments(e.target.value)}
         ></textarea>
+      </div>
+
+      <div>
+        <br></br>
+        <small>
+          <p>
+            Note: You cannot edit your reservation after submission. Please
+            check the information before submitting your reservation request.
+          </p>
+        </small>
+        <br></br>
+        <Link className="action-button" to="/confirmation">
+          Book Table
+        </Link>
       </div>
     </form>
   );

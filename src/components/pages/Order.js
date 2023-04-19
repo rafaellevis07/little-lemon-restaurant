@@ -1,7 +1,9 @@
-import React from "react";
+import Heading from "../sections/orderPages/Heading";
 
-const Order = () => {
-  return <div>Order</div>;
-};
-
-export default Order;
+export default function Order() {
+  return (
+    <>
+      <Heading />
+    </>
+  );
+}
