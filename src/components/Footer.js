@@ -1,4 +1,5 @@
 import footerLogo from "../assets/footer-logo.png";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -38,25 +39,20 @@ const Footer = () => {
           <h1 className="footer-header">Connect</h1>
           <ul className="footer-links">
             <a
-              href="https://www.facebook.com/thelittlelemonshop/"
+              href="https://github.com/rafaellevis07/crypto-app"
               target="_blank"
               rel="noreferrer"
             >
-              Facebook
+              <FaGithub className="icon-footer" />
+              Github
             </a>
             <a
-              href="https://www.instagram.com/littlelemonmoon/"
+              href="https://www.linkedin.com/in/rafagarcia07/"
               target="_blank"
               rel="noreferrer"
             >
-              Instagram
-            </a>
-            <a
-              href="https://www.youtube.com/watch?v=3Li-FfypZYE"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Join us!
+              <FaLinkedin className="icon-footer" />
+              LinkedIn
             </a>
           </ul>
         </li>{" "}

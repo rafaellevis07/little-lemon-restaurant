@@ -339,8 +339,12 @@ footer > menu {
   text-align: left;
   display: block;
   color: white;
-  padding-top: 0.2rem;
+  padding-top: 0.3rem;
   font-family: "Karla", "Sans Serif";
+}
+
+.icon-footer {
+  padding-right: 0.2rem;
 }
 
 .footer-links > a:hover,
@@ -394,6 +398,7 @@ footer > menu {
 }
 
 .reservation-form {
+  display: block;
   padding: 2rem 0 0.5rem 0;
   text-align: center;
   font-weight: bold;

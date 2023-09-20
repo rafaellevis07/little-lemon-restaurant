@@ -17,6 +17,9 @@ const Navigation = (props) => {
       <Link className="hover-effect" to="/about">
         <h1>ABOUT</h1>
       </Link>
+      <Link className="hover-effect" to="/reservations">
+        <h1>RESERVATIONS</h1>
+      </Link>
       <a
         className="hover-effect"
         href={require("../assets/menu.webp")}
@@ -25,15 +28,17 @@ const Navigation = (props) => {
       >
         <h1>MENU</h1>
       </a>
-      <Link className="hover-effect" to="/reservations">
-        <h1>RESERVATIONS</h1>
-      </Link>
       <Link className="hover-effect" to="/order">
         <h1>ORDER</h1>
       </Link>
-      <Link className="hover-effect" to="/login">
-        <h1>LOGIN</h1>
-      </Link>
+      <a
+        className="hover-effect"
+        href="https://github.com/rafaellevis07/little-lemon-restaurant"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <h1>CODE</h1>
+      </a>
     </menu>
   );
 };
