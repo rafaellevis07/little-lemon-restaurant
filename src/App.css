@@ -330,6 +330,7 @@ footer > menu {
 
 .footer-links {
   padding: 0;
+  margin-top: 1.5rem;
   list-style: none;
 }
 
